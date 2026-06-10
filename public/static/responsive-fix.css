@@ -1,0 +1,561 @@
+/* ============================================
+   MOBILE RESPONSIVENESS FIXES
+   This file fixes overflow, clipping, and layout
+   issues on mobile without changing the design/theme.
+   ============================================ */
+
+/* Global overflow prevention */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+}
+
+.main {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+}
+
+/* ===== MEDIA QUERIES FOR MOBILE FIX ===== */
+
+@media (max-width: 768px) {
+  /* Hero section fixes */
+  .hero {
+    overflow: hidden;
+  }
+  
+  .content {
+    overflow: hidden;
+    max-width: 100vw;
+  }
+  
+  .leftcon {
+    padding: 0 15px;
+    overflow: hidden;
+  }
+  
+  .leftcon h1 {
+    margin-left: 15px;
+    font-size: 6vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .leftcon p {
+    margin-left: 15px;
+    font-size: 3.5vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .hero-btns {
+    width: 90vw;
+    margin-left: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .hero-btns button {
+    position: relative !important;
+    left: auto !important;
+  }
+  
+  .btn-apt {
+    font-size: 3.5vw !important;
+    padding: 8px 15px !important;
+  }
+  
+  .btn-exp {
+    font-size: 3.5vw !important;
+    padding: 8px 15px !important;
+    margin-left: 10px !important;
+  }
+  
+  .con-down {
+    width: 90vw;
+    padding: 0 15px;
+  }
+  
+  .con-down p {
+    font-size: 3vw;
+    left: auto !important;
+    position: relative !important;
+    margin-left: 10px;
+  }
+  
+  .con-down .images {
+    margin-left: 15px;
+  }
+  
+  /* Preabout section fixes */
+  .preabout {
+    overflow: hidden;
+    padding: 20px 15px;
+  }
+  
+  .preabout2-hd {
+    padding: 20px 15px;
+    overflow: hidden;
+  }
+  
+  .preabout2-hd p,
+  .preabout2-hd ul {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .item1, .item2, .item3, .item4, .item5 {
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  .item1 ul {
+    padding: 0 10px;
+  }
+  
+  .item1 ul li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Preabout2 / Values section */
+  .preabout2 {
+    overflow: hidden;
+    padding: 20px 10px;
+  }
+  
+  .items1, .items2, .items3, .items4 {
+    padding: 15px;
+    overflow: hidden;
+  }
+  
+  .items1-rightt, .items2-rightt, .items3-rightt, .items4-rightt {
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .items1-rightt h1, .items2-rightt h1, .items3-rightt h1, .items4-rightt h1 {
+    font-size: 6vw;
+    word-wrap: break-word;
+  }
+  
+  .items1-rightt p, .items2-rightt p, .items3-rightt p, .items4-rightt p {
+    font-size: 3.5vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* About / Philosophy section */
+  .about {
+    overflow: hidden;
+    max-width: 100vw;
+  }
+  
+  .about-hd {
+    left: 15px;
+  }
+  
+  .about > h1 {
+    font-size: 40px !important;
+  }
+  
+  .right-content {
+    width: 90vw !important;
+    padding: 15px;
+    overflow: hidden;
+  }
+  
+  .right-content h1 {
+    font-size: 6vw;
+    word-wrap: break-word;
+  }
+  
+  .right-content p {
+    font-size: 3.5vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .abt-btns {
+    left: 42% !important;
+  }
+  
+  /* Services section fixes */
+  .services-section {
+    overflow: hidden !important;
+    max-width: 100vw;
+  }
+  
+  .services-section .ser_text {
+    width: 90% !important;
+    left: 5% !important;
+    transform: none !important;
+    padding: 0 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .active_service {
+    width: 90% !important;
+    right: auto !important;
+    left: 5% !important;
+    transform: none !important;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  .btns {
+    right: auto !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+  }
+  
+  .carousel {
+    width: 95% !important;
+    overflow: hidden;
+  }
+  
+  .carousel-track-container {
+    overflow: hidden;
+  }
+  
+  /* Post services */
+  .post_services {
+    overflow: hidden;
+    max-width: 100vw;
+    padding: 15px;
+  }
+  
+  .active_service2 {
+    width: 80% !important;
+    right: auto !important;
+    left: 10% !important;
+    word-wrap: break-word;
+  }
+  
+  /* Stay section */
+  .stay {
+    overflow: hidden;
+    max-width: 100vw;
+  }
+  
+  .p_stay {
+    width: 85vw !important;
+    padding: 0 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .bg_stay {
+    font-size: 25vw !important;
+  }
+  
+  /* Your choice section */
+  .your {
+    overflow: hidden;
+    max-width: 100vw;
+    padding: 15px;
+  }
+  
+  .your_top {
+    overflow: hidden;
+    padding: 15px;
+  }
+  
+  .yh1 {
+    font-size: 6vw !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .yh11 {
+    position: relative !important;
+    margin-top: 3vh !important;
+  }
+  
+  .yh12 {
+    position: relative !important;
+    margin-top: 1vh !important;
+  }
+  
+  .your_down {
+    gap: 15px;
+    padding: 0;
+  }
+  
+  .your_item {
+    width: 100% !important;
+    min-height: auto;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .your_item h1 {
+    font-size: 5vw;
+    word-wrap: break-word;
+  }
+  
+  .your_item p {
+    font-size: 3.5vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Book appointment section */
+  .bookapt {
+    overflow: hidden;
+    max-width: 100vw;
+    padding: 10px;
+  }
+  
+  .bookappointment {
+    padding: 20px 15px;
+    overflow: hidden;
+  }
+  
+  .bookappointment h1 {
+    font-size: 6vw;
+  }
+  
+  .form-container {
+    flex-direction: column;
+  }
+  
+  .form-divider {
+    display: none;
+  }
+  
+  input, select, textarea {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+  
+  /* Footer fixes */
+  .footer {
+    overflow: hidden;
+    max-width: 100vw;
+    height: auto !important;
+    min-height: 100vh;
+    padding: 20px 15px;
+  }
+  
+  .footer_top {
+    padding: 10px;
+  }
+  
+  .footer_top .logo {
+    width: 40vw !important;
+  }
+  
+  .footer_bottom {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .ftr_left {
+    width: 100% !important;
+    padding: 15px;
+  }
+  
+  .ftr_left_bottom {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .abt_left {
+    margin-left: 0 !important;
+    width: auto !important;
+  }
+  
+  .ftr_right_bottom {
+    width: 100% !important;
+    height: 40vh;
+    position: relative !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ftr_img1 {
+    width: 80px !important;
+    height: 80px !important;
+    left: 60% !important;
+    top: 10% !important;
+  }
+  
+  .ftr_img1 img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  
+  .ftr_img2 {
+    width: 150px !important;
+    height: 150px !important;
+    top: 5% !important;
+    left: 5% !important;
+  }
+  
+  .ftr_img3 {
+    width: 120px !important;
+    height: 120px !important;
+    top: 40% !important;
+    left: 50% !important;
+    right: auto !important;
+  }
+  
+  /* Testimonial fix */
+  .testimonial {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .testimonial-right h3 {
+    font-size: 4vw;
+  }
+  
+  /* Fullscreen nav */
+  .fullscreen-nav ul li {
+    width: 90vw;
+  }
+  
+  .fullscreen-nav .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .fullscreen-nav .buttons button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+  
+  /* Navbar logo fix */
+  .navbar .logo img {
+    width: 30vw !important;
+    height: auto !important;
+    max-height: 50px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  .leftcon h1 {
+    font-size: 7vw !important;
+  }
+  
+  .leftcon p {
+    font-size: 4vw !important;
+  }
+  
+  .hero-btns {
+    top: auto !important;
+    position: relative !important;
+    margin-top: 20px;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-start !important;
+    align-items: center !important;
+  }
+  
+  .btn-apt, .btn-exp {
+    position: relative !important;
+    left: auto !important;
+    font-size: 3.5vw !important;
+  }
+  
+  .con-down {
+    position: relative !important;
+    top: auto !important;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .con-down .images {
+    position: relative !important;
+    top: auto !important;
+  }
+  
+  .con-down p {
+    position: relative !important;
+    left: auto !important;
+    font-size: 3.5vw !important;
+    margin-left: 10px !important;
+  }
+  
+  .about > h1 {
+    font-size: 35px !important;
+  }
+  
+  .circle-abt {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  
+  .images-abt img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  
+  .p_stay {
+    font-size: 4vw !important;
+    line-height: 1.6 !important;
+  }
+  
+  .bookapt {
+    height: auto !important;
+    min-height: auto;
+  }
+  
+  .bookappointment {
+    height: auto !important;
+    width: 100% !important;
+  }
+  
+  #message {
+    height: 20vh !important;
+  }
+  
+  label {
+    margin-top: 20px !important;
+  }
+  
+  .form-left .form-group,
+  .form-right .form-group {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .leftcon h1 {
+    font-size: 6.5vw !important;
+    top: 15% !important;
+  }
+  
+  .leftcon p {
+    top: 35% !important;
+    font-size: 3.8vw !important;
+  }
+  
+  .hero-btns button {
+    font-size: 3.2vw !important;
+  }
+  
+  .your_top {
+    height: auto !important;
+    min-height: 15vh;
+  }
+  
+  .your_down {
+    height: auto !important;
+  }
+  
+  .services-section {
+    height: auto !important;
+    min-height: 100vh;
+    padding-bottom: 20px;
+  }
+  
+  .items1-rightt h1, .items2-rightt h1, .items3-rightt h1, .items4-rightt h1 {
+    font-size: 7vw !important;
+  }
+}

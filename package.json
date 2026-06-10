@@ -1,0 +1,26 @@
+{
+  "name": "hospital-rk",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Radhe Krishna Hospital Management System",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "wrangler pages dev dist",
+    "dev:sandbox": "wrangler pages dev dist --d1=hospital-db --local --ip 0.0.0.0 --port 3000",
+    "deploy": "npm run build && wrangler pages deploy dist",
+    "db:migrate:local": "wrangler d1 migrations apply hospital-db --local",
+    "db:seed": "wrangler d1 execute hospital-db --local --file=./seed.sql",
+    "db:reset": "rm -rf .wrangler/state/v3/d1 && npm run db:migrate:local && npm run db:seed"
+  },
+  "dependencies": {
+    "hono": "^4.7.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20250705.0",
+    "@hono/vite-cloudflare-pages": "^0.4.2",
+    "vite": "^5.4.0",
+    "wrangler": "^3.78.0",
+    "typescript": "^5.5.0"
+  }
+}
